@@ -22,17 +22,43 @@ export function Guilds({ handleGuildSelect }: Props) {
       name: 'Lendários',
       icon: 'image.png',
       owner: true
-    }
+    },
+    {
+      id: '3',
+      name: 'Lendários',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '4',
+      name: 'Lendários',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '5',
+      name: 'Lendários',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '6',
+      name: 'Lendários',
+      icon: 'image.png',
+      owner: true
+    },
   ]
 
   return (
     <View style={styles.container}>
       <FlatList
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
+        ListHeaderComponent={() => <ListDivider isCentered />}
         data={guilds}
         keyExtractor={item => item.id}
         showsVerticalScrollIndicator={false}
         style={styles.guilds}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
         renderItem={({ item }) => (
           <Guild
             data={item}
