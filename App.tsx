@@ -13,6 +13,8 @@ import { Routes } from './src/routes'
 
 // Parei no minuto 1:29:02
 
+// Desafio: em AppointmentCreate verificar se os campos estão preenchidos ou não
+
 LogBox.ignoreLogs(['You are not currently signed in to Expo on your development machine.'])
 
 export default function App() {
